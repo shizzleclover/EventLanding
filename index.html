@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Page</title>
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
-    <form action="" method="post">
+    <form id="eventForm">
         <label for="name">Name</label>
         <br>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
         <br><br>
 
         <label for="email">Your Email</label>
         <br>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         <br><br>
 
         <label for="company">Your Company's Name - If Applicable</label>
@@ -66,30 +67,5 @@
 
         <input type="submit" value="Submit">
     </form>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = htmlspecialchars($_POST['name']);
-        $email = htmlspecialchars($_POST['email']);
-        $company = htmlspecialchars($_POST['company']);
-        $business = htmlspecialchars($_POST['business']);
-        $team_members = htmlspecialchars($_POST['team_members']);
-        $challenges = htmlspecialchars($_POST['challenges']);
-        $linkedin = htmlspecialchars($_POST['linkedin']);
-        $more_info = htmlspecialchars($_POST['more_info']);
-        $question = htmlspecialchars($_POST['question']);
-
-        echo "<h2>Your Input:</h2>";
-        echo "Name: $name<br>";
-        echo "Email: $email<br>";
-        echo "Company: $company<br>";
-        echo "Business: $business<br>";
-        echo "Team Members: $team_members<br>";
-        echo "Challenges: $challenges<br>";
-        echo "LinkedIn: $linkedin<br>";
-        echo "More Info: $more_info<br>";
-        echo "Question: $question<br>";
-    }
-    ?>
 </body>
 </html>
