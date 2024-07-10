@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 div {
@@ -16,7 +17,7 @@ div {
     text-align: center;
 }
 
-.container {
+.success-container {
     border-radius: 30px;
     text-align: left;
     display: flex;
@@ -26,6 +27,15 @@ div {
     padding: 2rem;
     background-color: white;
     color: black;
+    max-width: 90%;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.success-container img {
+    width: 100px; 
+    height: auto; 
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -108,11 +118,6 @@ select {
     margin-bottom: 20px;
 }
 
-.success-message {
-    display: none; 
-    color: #28a745;  
-    font-size: 24px;
-}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
