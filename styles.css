@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #3375b0;
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -51,7 +51,7 @@ textarea {
 
 input[type="submit"] {
     width: 100%;
-    background-color: black;
+    background-color: #3375b0;
     color: white;
     padding: 14px 20px;
     margin: 10px 0;
@@ -80,7 +80,38 @@ select {
 .asterisk {
     color: red;
 }
-
+.reg-container {
+    background-color: #3375b0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.success-container {
+    border-radius: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    max-width: 85%;
+    box-sizing: border-box;
+}
+.success-container p{
+    text-align: center;
+}
+.success-container img {
+    width: 75px; 
+    height: 75px; 
+    margin-bottom: 1rem;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -108,11 +139,6 @@ select {
     margin-bottom: 20px;
 }
 
-.success-message {
-    display: none; 
-    color: #28a745;  
-    font-size: 24px;
-}
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
