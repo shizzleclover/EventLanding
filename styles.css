@@ -1,5 +1,10 @@
 body {
-    background-color: #3375b0;
+        background-image: url('Images/bg-img.png');
+        background-size: cover; /* Makes the image cover the entire element */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        height: fit-content; /* Set the height of the div */
+        width: 100%; /* Set the width of the div */
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -75,6 +80,7 @@ textarea {
 
 select {
     font-size: 14px;
+    padding: 0.5rem;
 }
 
 .asterisk {
@@ -94,18 +100,24 @@ select {
 }
 .success-container {
     border-radius: 30px;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     color: rgb(0, 0, 0);
     max-width: 85%;
     box-sizing: border-box;
 }
 .success-container p{
     text-align: center;
+    font-size: 1em;
+    margin: 0;
+}
+.success-container h1{
+    text-align: center;
+    font-size: 1.5em;
 }
 .success-container img {
     width: 75px; 
