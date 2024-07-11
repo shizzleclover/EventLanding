@@ -107,13 +107,13 @@ select {
     align-items: center;
     padding: 1rem;
     color: rgb(0, 0, 0);
-    max-width: 85%;
+    max-width: 90%;
     box-sizing: border-box;
 }
 .success-container p{
     text-align: center;
     font-size: 1em;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 .success-container h1{
     text-align: center;
